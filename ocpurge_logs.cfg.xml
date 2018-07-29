@@ -1,0 +1,22 @@
+<FilesConfig>
+<Types>
+	<Type id="1">
+       <LocalDir>/tmp/dir1</LocalDir>
+       <FileNameRegEx>^file_\d+.log$</FileNameRegEx>
+       <RecursiveFlag>1</RecursiveFlag>
+       <Compression enable="1">
+       				<SkipCompressFiles>3</SkipCompressFiles>
+       </Compression>
+       <LeaveLastFilesNum>27</LeaveLastFilesNum>
+	</Type>
+	<Type id="2">
+				<LocalDir>/tmp/dir2</LocalDir>
+				<FileNameRegEx>^file_err_\d+.log$</FileNameRegEx>
+				<RecursiveFlag>0</RecursiveFlag>
+				<Compression enable="1">
+								<SkipCompressFiles>3</SkipCompressFiles>
+				</Compression>
+				<LeaveLastFilesNum>27</LeaveLastFilesNum>
+	</Type>
+</Types>
+</FilesConfig>
