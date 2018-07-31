@@ -7,7 +7,7 @@
        <Compression enable="1">
        				<SkipCompressFiles>3</SkipCompressFiles>
        </Compression>
-       <LeaveLastFilesNum>27</LeaveLastFilesNum>
+       <LeaveLastFilesNum>-27</LeaveLastFilesNum>
 	</Type>
 	<Type id="2">
 				<LocalDir>/tmp/dir2</LocalDir>

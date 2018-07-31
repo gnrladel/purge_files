@@ -81,7 +81,7 @@ def purge_main():
                 logging.debug('file {} not compatible with configured regular expression'.format(file))
         if int(GetConfigParams(i)[3]) < 0:
             logging.error("Invalid parameter 'LeaveLastFilesNum={}', it must be a positive number".format(int(GetConfigParams(i)[3])))
-            raise ValueError("Invalid parameter 'LeaveLastFilesNum={}', it must be a positive number".format(int(GetConfigParams(i)[3])))
+            sys.exit("Invalid parameter 'LeaveLastFilesNum={}', it must be a positive number".format(int(GetConfigParams(i)[3])))
         elif int(GetConfigParams(i)[3]) < len(files):
             for num in range(len(files) - int(GetConfigParams(i)[3])):
                 files2 = sorted(list_files(path))[:-int(uncomp_files)]
@@ -110,7 +110,7 @@ def purge_recursive():
                     logging.debug('file {} not compatible with configured regular expression'.format(file))
             if int(GetConfigParams(i)[3]) < 0:
                 logging.error("Invalid parameter 'LeaveLastFilesNum={}', it must be a positive number".format(int(GetConfigParams(i)[3])))
-                raise ValueError("Invalid parameter 'LeaveLastFilesNum={}', it must be a positive number".format(int(GetConfigParams(i)[3])))
+                sys.exit("Invalid parameter 'LeaveLastFilesNum={}', it must be a positive number".format(int(GetConfigParams(i)[3])))
             elif int(GetConfigParams(i)[3]) < len(files):
                 for num in range(len(files) - int(GetConfigParams(i)[3])):
                     files2 = sorted(list_files(path))
@@ -132,4 +132,4 @@ if __name__ == '__main__':
             purge_recursive()
         else:
             logging.error("Invalid parameter 'RecursiveFlag={}', it must be '0' or '1'".format(GetConfigParams(i)[3]))
-            raise ValueError("Invalid parameter 'RecursiveFlag={}', it must be '0' or '1'".format(GetConfigParams(i)[3]))
+            sys.exit("Invalid parameter 'RecursiveFlag={}', it must be '0' or '1'".format(GetConfigParams(i)[3]))
