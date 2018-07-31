@@ -131,5 +131,5 @@ if __name__ == '__main__':
             purge_main()
             purge_recursive()
         else:
-            logging.error("Invalid parameter 'RecursiveFlag='{}, it must be '0' or '1'".format(GetConfigParams(i)[3]))
-            raise ValueError("Invalid parameter 'RecursiveFlag='{}, it must be '0' or '1'".format(GetConfigParams(i)[3]))
+            logging.error("Invalid parameter 'RecursiveFlag={}', it must be '0' or '1'".format(GetConfigParams(i)[3]))
+            raise ValueError("Invalid parameter 'RecursiveFlag={}', it must be '0' or '1'".format(GetConfigParams(i)[3]))
