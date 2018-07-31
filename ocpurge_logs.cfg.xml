@@ -2,7 +2,7 @@
 <Types>
 	<Type id="1">
        <LocalDir>/tmp/dir1</LocalDir>
-       <FileNameRegEx>^file_\d+.log$</FileNameRegEx>
+       <FileNameRegEx>^ocbrowser_\d+.log$</FileNameRegEx>
        <RecursiveFlag>1</RecursiveFlag>
        <Compression enable="1">
        				<SkipCompressFiles>3</SkipCompressFiles>
@@ -11,7 +11,7 @@
 	</Type>
 	<Type id="2">
 				<LocalDir>/tmp/dir2</LocalDir>
-				<FileNameRegEx>^file_err_\d+.log$</FileNameRegEx>
+				<FileNameRegEx>^ocbrowser_err_\d+.log$</FileNameRegEx>
 				<RecursiveFlag>0</RecursiveFlag>
 				<Compression enable="1">
 								<SkipCompressFiles>3</SkipCompressFiles>
